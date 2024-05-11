@@ -1,10 +1,13 @@
+import axios from "axios";
 import { useState } from "react";
 
 const Put = () => {
   const [id, setId] = useState("");
   const [title, setTitle] = useState("");
   const updateHandler = () => {
-    
+    axios
+      .put(`https://jsonplaceholder.typicode.com/posts/${id}`, { title })
+      .then((res) => console.log(res));
   };
   return (
     <div>
