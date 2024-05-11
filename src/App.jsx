@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Post from "./components/Post";
+import Delete from "./components/Delete";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -19,6 +20,7 @@ function App() {
         ))}
       </ul> */}
       {/* <Post /> */}
+      <Delete />
     </>
   );
 }
