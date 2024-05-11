@@ -1,5 +1,6 @@
-
 const Put = () => {
+  const [id, setId] = useState("");
+
   return (
     <div>
       <input
@@ -10,6 +11,6 @@ const Put = () => {
       />
     </div>
   );
-}
+};
 
 export default Put;
