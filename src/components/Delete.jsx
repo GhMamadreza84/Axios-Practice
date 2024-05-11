@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const Delete = () => {
   const [id, setId] = useState("");
+  const deleteHandler = () => {};
   return (
     <div>
       <input
