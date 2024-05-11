@@ -1,8 +1,13 @@
+import axios from "axios";
 import { useState } from "react";
 
 const Delete = () => {
   const [id, setId] = useState("");
-  const deleteHandler = () => {};
+  const deleteHandler = () => {
+    axios
+      .delete(`https://jsonplaceholder.typicode.com/posts/${id}`)
+      .then((res) => console.log(res));
+  };
   return (
     <div>
       <input
