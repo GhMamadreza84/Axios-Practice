@@ -6,7 +6,7 @@ const Put = () => {
   const [title, setTitle] = useState("");
   const updateHandler = () => {
     axios
-      .put(`https://jsonplaceholder.typicode.com/posts/${id}`, { title })
+      .patch(`https://jsonplaceholder.typicode.com/posts/${id}`, { title })
       .then((res) => console.log(res));
   };
   return (
