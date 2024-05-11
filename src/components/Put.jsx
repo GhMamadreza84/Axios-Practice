@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const Put = () => {
   const [id, setId] = useState("");
+  const [title, setTitle] = useState("");
 
   return (
     <div>
