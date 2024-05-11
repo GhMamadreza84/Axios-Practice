@@ -9,6 +9,13 @@ const Put = () => {
         value={id}
         onChange={(e) => setId(e.target.value)}
       />
+      <input
+        type="text"
+        placeholder="Title"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+      />
+      <button onClick={updateHandler}>Update</button>
     </div>
   );
 };
